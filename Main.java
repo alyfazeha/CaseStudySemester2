@@ -13,9 +13,16 @@ public class Main {
             new MataKuliah("MK002", "Basis Data", 3),
             new MataKuliah("MK003", "Desain Web", 3)
         };
-        Penilaian [] daftarNilai = new Penilaian[5];
+        Penilaian[] daftarNilai = new Penilaian[5];
+        daftarNilai[0] = new Penilaian(listMhs[0], daftarMK[0], 80,   85, 90);
+        daftarNilai[1] = new Penilaian(listMhs[0], daftarMK[1], 60,   75, 70);
+        daftarNilai[2] = new Penilaian(listMhs[1], daftarMK[0], 75,   70, 80);
+        daftarNilai[3] = new Penilaian(listMhs[2], daftarMK[1], 85,   90, 95);
+        daftarNilai[4] = new Penilaian(listMhs[2], daftarMK[2], 80,   90, 65);
         
+        MataKuliah matkul = new MataKuliah();
         Mahasiswa mahasiswa = new Mahasiswa();
+        Penilaian penilaian = new Penilaian();
         
         while (true) { 
             System.out.println("=== MENU SISTEM AKADEMIK ===");
@@ -31,9 +38,9 @@ public class Main {
             if(input == 1){
                 mahasiswa.tampilMahasiswa(listMhs);
             }else if(input == 2){
-                // matkul.tampil();
+                matkul.tampilMatkul();
             }else if(input == 3){
-                // penilaian.tampilkanDataPenilaian();
+                penilaian.tampilkanDataPenilaian();
             }else if(input == 4){
                 // penilaian.urutkanMahasiswa();
             }else if(input == 5){
