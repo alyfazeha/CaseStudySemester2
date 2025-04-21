@@ -8,8 +8,11 @@ public class Main {
             new Mahasiswa("22002", "Budi Santoso", "Informatika"),
             new Mahasiswa("22003", "Citra Dewi", "Sistem Informasi Bisnis"),
         };
+        
+        Penilaian [] daftarNilai = new Penilaian[5];
+        
         Mahasiswa mahasiswa = new Mahasiswa();
-    
+        
         while (true) { 
             System.out.println("=== MENU SISTEM AKADEMIK ===");
             System.out.println("1. Tampilkan daftar Mahasiswa");
