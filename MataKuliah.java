@@ -3,19 +3,18 @@ public class MataKuliah {
     String namaMK;
     int SKS;
 
-    MataKuliah() {
-
-    }
-
     MataKuliah(String kodeMK, String namaMK, int SKS){
         this.kodeMK = kodeMK;
         this.namaMK = namaMK;
         this.SKS = SKS;
     }
-    public void tampilMatkul(MataKuliah [] daftarMK){
-        System.out.println("=== Daftar Mata Kuliah ===");
+    public MataKuliah(){
+        
+    }
+    void tampilMatkul(MataKuliah[] daftarMK){
+        System.out.println("\n Daftar MataKuliah: ");
         for (int i = 0; i < 3; i++) {
-            System.out.println("Kode MK: " + daftarMK[i].kodeMK + " | Nama: " + daftarMK[i].namaMK + " | SKS: " + daftarMK[i].SKS);
+            System.out.println("kode MK: " + daftarMK[i].kodeMK + " | Nama: " + daftarMK[i].namaMK + " | Sks: " + daftarMK[i].SKS);
         }
     }
 }

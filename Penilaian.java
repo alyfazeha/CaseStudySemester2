@@ -31,8 +31,21 @@ public class Penilaian {
         }
     }
 
-    void urutkanMahasiswa() {
+    void urutkanMahasiswa(Penilaian[] daftarNilai, Mahasiswa[] listMhs, MataKuliah[] daftarMK) {
         System.out.println("=== Urutkan Mahasiswa Berdasarkan Nilai Akhir ===");
+        for (int i = 0; i < daftarNilai.length-1; i++) {
+            for (int j = i + 1; j < daftarNilai.length; j++){
+                if (daftarNilai[i].nilaiAkhir < daftarNilai[j].nilaiAkhir){
+                    Penilaian temp = daftarNilai[i];
+                    daftarNilai[i] = daftarNilai[j];
+                    daftarNilai[j] = temp;
+                }
+            }
+        }
+        for (int i = 0; i < 5; i++) {
+            Penilaian p = daftarNilai[i];
+            System.out.println(p.mahasiswa.nama +" | "+p.matkul.namaMK+" | Nilai Akhir: "+p.nilaiAkhir);
+        }
         // Implement sorting logic here
 
     }
