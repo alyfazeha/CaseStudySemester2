@@ -61,10 +61,10 @@ public class Penilaian {
             }
         }
         if(find == false){
-            System.out.println("Mahasiswa dengan NIM " + listMhs[posisi].NIM + " tersebut tidak ditemukan dalam daftar mahasiswa");
+            System.out.println("Mahasiswa dengan NIM " + nim + " tidak ditemukan dalam daftar mahasiswa");
             System.out.println();
         }else{
-            System.out.println("Mahasiswa Ditemukan: " + " NIM: " + listMhs[posisi].NIM + " | Nama: " + listMhs[posisi].nama + " | Prodi: " + listMhs[posisi].prodi);
+            System.out.println("Mahasiswa Ditemukan: " + " NIM: " + nim + " | Nama: " + listMhs[posisi].nama + " | Prodi: " + listMhs[posisi].prodi);
             System.out.println();
         }
     }    

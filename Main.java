@@ -51,7 +51,7 @@ public class Main {
                 System.out.println("Terimakasih, sampai jumpa kembali!");
                 break;
             }else{
-                System.out.println("Invalid input.\nHarap pilih salah satu menu yang tersedia");
+                System.out.println("\nInvalid input.\nHarap pilih salah satu menu yang tersedia\n");
             }    
         }
     }
