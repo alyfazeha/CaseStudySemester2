@@ -38,9 +38,9 @@ public class Main {
             if(input == 1){
                 mahasiswa.tampilMahasiswa(listMhs);
             }else if(input == 2){
-                matkul.tampilMatkul();
+                matkul.tampilMatkul(daftarMK);
             }else if(input == 3){
-                penilaian.tampilkanDataPenilaian();
+                penilaian.tampilkanDataPenilaian(daftarNilai, listMhs, daftarMK);
             }else if(input == 4){
                 // penilaian.urutkanMahasiswa();
             }else if(input == 5){

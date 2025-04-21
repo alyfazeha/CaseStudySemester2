@@ -6,14 +6,17 @@ public class MataKuliah {
     MataKuliah() {
 
     }
-    
+
     MataKuliah(String kodeMK, String namaMK, int SKS){
         this.kodeMK = kodeMK;
         this.namaMK = namaMK;
         this.SKS = SKS;
     }
-    public void tampilMatkul(){
-        System.out.println("Kode MK: "+ kodeMK +" | nama: "+ namaMK +" | Sks: "+ SKS);
+    public void tampilMatkul(MataKuliah [] daftarMK){
+        System.out.println("=== Daftar Mata Kuliah ===");
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Kode MK: " + daftarMK[i].kodeMK + " | Nama: " + daftarMK[i].namaMK + " | SKS: " + daftarMK[i].SKS);
+        }
     }
 }
 //public class dataMatakuliah {
