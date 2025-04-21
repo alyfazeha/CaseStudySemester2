@@ -42,9 +42,9 @@ public class Main {
             }else if(input == 3){
                 penilaian.tampilkanDataPenilaian(daftarNilai, listMhs, daftarMK);
             }else if(input == 4){
-                // penilaian.urutkanMahasiswa();
+                penilaian.urutkanMahasiswa(daftarNilai, listMhs, daftarMK);
             }else if(input == 5){
-                System.out.print("Masukkan NIM yang dicari: ");
+                System.out.print("\nMasukkan NIM yang dicari: ");
                 String nim = sc.next();
                 penilaian.cariMahasiswa(nim, listMhs);
             }else if(input == 0){

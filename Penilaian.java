@@ -24,15 +24,16 @@ public class Penilaian {
     }
 
     void tampilkanDataPenilaian(Penilaian[] daftarNilai, Mahasiswa[] listMhs, MataKuliah[] daftarMK) {
-        System.out.println("=== Data Penilaian Mahasiswa ===");
+        System.out.println("\nData Penilaian : ");
         for (int i = 0; i < 5; i++) {
             Penilaian p = daftarNilai[i];
             System.out.println( p.mahasiswa.nama + " | " + p.matkul.namaMK + " | Nilai Akhir: " + p.nilaiAkhir);
         }
+        System.out.println();
     }
 
     void urutkanMahasiswa(Penilaian[] daftarNilai, Mahasiswa[] listMhs, MataKuliah[] daftarMK) {
-        System.out.println("=== Urutkan Mahasiswa Berdasarkan Nilai Akhir ===");
+        System.out.println("\nData Penilaian : ");
         for (int i = 0; i < daftarNilai.length-1; i++) {
             for (int j = i + 1; j < daftarNilai.length; j++){
                 if (daftarNilai[i].nilaiAkhir < daftarNilai[j].nilaiAkhir){
@@ -46,7 +47,7 @@ public class Penilaian {
             Penilaian p = daftarNilai[i];
             System.out.println(p.mahasiswa.nama +" | "+p.matkul.namaMK+" | Nilai Akhir: "+p.nilaiAkhir);
         }
-        // Implement sorting logic here
+        System.out.println();
 
     }
     void cariMahasiswa(String nim, Mahasiswa[]listMhs) {
@@ -61,8 +62,10 @@ public class Penilaian {
         }
         if(find == false){
             System.out.println("Mahasiswa dengan NIM " + listMhs[posisi].NIM + " tersebut tidak ditemukan dalam daftar mahasiswa");
+            System.out.println();
         }else{
             System.out.println("Mahasiswa Ditemukan: " + " NIM: " + listMhs[posisi].NIM + " | Nama: " + listMhs[posisi].nama + " | Prodi: " + listMhs[posisi].prodi);
+            System.out.println();
         }
     }    
 }

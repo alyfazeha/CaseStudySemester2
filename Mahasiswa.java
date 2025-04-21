@@ -15,5 +15,6 @@ public class Mahasiswa {
         for (int i = 0; i < 3; i++) {
             System.out.println("NIM: " + listMhs[i].NIM + " | Nama: " + listMhs[i].nama + " | Prodi: " + listMhs[i].prodi);
         }
+        System.out.println();
     }
 }

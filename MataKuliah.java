@@ -12,10 +12,11 @@ public class MataKuliah {
         
     }
     void tampilMatkul(MataKuliah[] daftarMK){
-        System.out.println("\n Daftar MataKuliah: ");
+        System.out.println("\nDaftar MataKuliah: ");
         for (int i = 0; i < 3; i++) {
             System.out.println("kode MK: " + daftarMK[i].kodeMK + " | Nama: " + daftarMK[i].namaMK + " | Sks: " + daftarMK[i].SKS);
         }
+        System.out.println();
     }
 }
 
