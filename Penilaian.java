@@ -20,14 +20,15 @@ public class Penilaian {
     }
 
     void hitungNilaiAkhir() {
-        double nilaiAkhir = (0.3 * tugas) + (0.3 * uts) + (0.4 * uas);
-        System.out.println("Nilai Akhir: " + nilaiAkhir);
+        this.nilaiAkhir = (0.3 * tugas) + (0.3 * uts) + (0.4 * uas);
+        System.out.println("Nilai Akhir: " + this.nilaiAkhir);
     }
 
-    void tampilkanDataPenilaian() {
+    void tampilkanDataPenilaian(Penilaian[] daftarNilai, Mahasiswa[] listMhs, MataKuliah[] daftarMK) {
         System.out.println("=== Data Penilaian Mahasiswa ===");
         for (int i = 0; i < 5; i++) {
-            System.out.println("Nama: " + mahasiswa.nama + " | Mata Kuliah: " + matkul.namaMK + " | Nilai Akhir: " + nilaiAkhir);
+            Penilaian p = daftarNilai[i];
+            System.out.println( p.mahasiswa.nama + " | " + p.matkul.namaMK + " | Nilai Akhir: " + p.nilaiAkhir);
         }
     }
 
