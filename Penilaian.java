@@ -21,7 +21,6 @@ public class Penilaian {
 
     void hitungNilaiAkhir() {
         this.nilaiAkhir = (0.3 * tugas) + (0.3 * uts) + (0.4 * uas);
-        System.out.println("Nilai Akhir: " + this.nilaiAkhir);
     }
 
     void tampilkanDataPenilaian(Penilaian[] daftarNilai, Mahasiswa[] listMhs, MataKuliah[] daftarMK) {
@@ -35,9 +34,22 @@ public class Penilaian {
     void urutkanMahasiswa() {
         System.out.println("=== Urutkan Mahasiswa Berdasarkan Nilai Akhir ===");
         // Implement sorting logic here
+
     }
-    void cariMahasiswa(String nim) {
-        System.out.println("=== Cari Mahasiswa Berdasarkan NIM ===");
-        // Implement search logic here
+    void cariMahasiswa(String nim, Mahasiswa[]listMhs) {
+        boolean find = false;
+        int posisi = 0;
+        for (int j = 0; j < listMhs.length; j++) {
+            if(listMhs[j].NIM.equals(nim)){
+                find = true;
+                posisi = j;
+                break;
+            }
+        }
+        if(find == false){
+            System.out.println("Mahasiswa dengan NIM " + listMhs[posisi].NIM + " tersebut tidak ditemukan dalam daftar mahasiswa");
+        }else{
+            System.out.println("Mahasiswa Ditemukan: " + " NIM: " + listMhs[posisi].NIM + " | Nama: " + listMhs[posisi].nama + " | Prodi: " + listMhs[posisi].prodi);
+        }
     }    
 }

@@ -20,8 +20,8 @@ public class Main {
         daftarNilai[3] = new Penilaian(listMhs[2], daftarMK[1], 85,   90, 95);
         daftarNilai[4] = new Penilaian(listMhs[2], daftarMK[2], 80,   90, 65);
         
-        MataKuliah matkul = new MataKuliah();
         Mahasiswa mahasiswa = new Mahasiswa();
+        MataKuliah matkul = new MataKuliah();
         Penilaian penilaian = new Penilaian();
         
         while (true) { 
@@ -46,7 +46,7 @@ public class Main {
             }else if(input == 5){
                 System.out.print("Masukkan NIM yang dicari: ");
                 String nim = sc.next();
-                // penilaian.cariMahasiswa(nim);
+                penilaian.cariMahasiswa(nim, listMhs);
             }else if(input == 0){
                 System.out.println("Terimakasih, sampai jumpa kembali!");
                 break;
