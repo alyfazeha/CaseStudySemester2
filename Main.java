@@ -8,7 +8,11 @@ public class Main {
             new Mahasiswa("22002", "Budi Santoso", "Informatika"),
             new Mahasiswa("22003", "Citra Dewi", "Sistem Informasi Bisnis"),
         };
-        
+        MataKuliah[] daftarMK = {
+            new MataKuliah("MK001", "Struktur data", 3),
+            new MataKuliah("MK002", "Basis Data", 3),
+            new MataKuliah("MK003", "Desain Web", 3)
+        };
         Penilaian [] daftarNilai = new Penilaian[5];
         
         Mahasiswa mahasiswa = new Mahasiswa();
