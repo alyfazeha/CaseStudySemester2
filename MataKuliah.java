@@ -19,13 +19,4 @@ public class MataKuliah {
         }
     }
 }
-//public class dataMatakuliah {
-     
-  //   public void tampil(){
-    //     System.out.println("Daftar Matakuliah: ");
-      //   for (matakuliah mk : daftarMK){
-        // mk.tampil();
-        // }
-     //}
- //}
 
